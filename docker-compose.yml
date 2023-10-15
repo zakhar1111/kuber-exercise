@@ -16,5 +16,3 @@ services:
   shopping.db:
     image: mongo
 
-volumes:
-  mongo_data:
