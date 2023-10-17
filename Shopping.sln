@@ -9,6 +9,16 @@ Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-co
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shopping.Client", "Shopping.Client\Shopping.Client.csproj", "{52A046EC-24A7-4FD8-8B1F-772796DC3D5A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "k8s", "k8s", "{281B205B-470C-4A5D-B937-92937B648299}"
+	ProjectSection(SolutionItems) = preProject
+		k8s\mongo-configmap.yaml = k8s\mongo-configmap.yaml
+		k8s\mongo-secret.yaml = k8s\mongo-secret.yaml
+		k8s\mongo.yaml = k8s\mongo.yaml
+		k8s\shoppingapi-configmap.yaml = k8s\shoppingapi-configmap.yaml
+		k8s\shoppingapi.yaml = k8s\shoppingapi.yaml
+		k8s\shoppingclient.yaml = k8s\shoppingclient.yaml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
