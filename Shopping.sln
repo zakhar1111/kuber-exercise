@@ -11,12 +11,31 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shopping.Client", "Shopping
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "k8s", "k8s", "{281B205B-470C-4A5D-B937-92937B648299}"
 	ProjectSection(SolutionItems) = preProject
+		k8s\k8s_commands.txt = k8s\k8s_commands.txt
 		k8s\mongo-configmap.yaml = k8s\mongo-configmap.yaml
 		k8s\mongo-secret.yaml = k8s\mongo-secret.yaml
 		k8s\mongo.yaml = k8s\mongo.yaml
 		k8s\shoppingapi-configmap.yaml = k8s\shoppingapi-configmap.yaml
 		k8s\shoppingapi.yaml = k8s\shoppingapi.yaml
 		k8s\shoppingclient.yaml = k8s\shoppingclient.yaml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "pipelines", "pipelines", "{0F726064-4138-4DB5-BC21-5914E0F1A746}"
+	ProjectSection(SolutionItems) = preProject
+		pipelines\shoppingapi-pipeline.yaml = pipelines\shoppingapi-pipeline.yaml
+		pipelines\shoppingclient-pipeline.yaml = pipelines\shoppingclient-pipeline.yaml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "aks", "aks", "{29A75B30-6CD3-44CA-B40C-DFE1F549DBB3}"
+	ProjectSection(SolutionItems) = preProject
+		aks\commands.txt = aks\commands.txt
+		aks\mongo-configmap.yaml = aks\mongo-configmap.yaml
+		aks\mongo-secret.yaml = aks\mongo-secret.yaml
+		aks\mongo.yaml = aks\mongo.yaml
+		aks\shoppingapi-configmap.yaml = aks\shoppingapi-configmap.yaml
+		aks\shoppingapi.yaml = aks\shoppingapi.yaml
+		aks\shoppingautoscale.yaml = aks\shoppingautoscale.yaml
+		aks\shoppingclient.yaml = aks\shoppingclient.yaml
 	EndProjectSection
 EndProject
 Global
