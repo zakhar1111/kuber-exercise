@@ -1,0 +1,16 @@
+kubectlget deployment
+kubectl deployment nginx-depl -o yaml 
+
+kube apply -f .\nginx-depl.yaml
+
+kubectl config get-contexts
+kubectl get deployment
+kubectl get pods
+kubectl get all
+kubectl get replicaset
+kubectl get service
+kubectl describe service nginx-service
+kubectl get pod -o wide
+kubectl apply -f .\
+kubectl apply -f .\shoppingclient.yaml
+kubectl delete -f .\shoppingclient.yaml
