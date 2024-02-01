@@ -29,4 +29,13 @@ jobs:
         push: true
         tags: ${{ secrets.DOCKER_USERNAME }}/shoppingapi:latest
 
+    - name: Build and Push Docker Image API
+      uses: docker/build-push-action@v2
+      with:
+        context: .
+        file: ./Shopping.Client/Dockerfile
+        platforms: linux/amd64
+        push: true
+        tags: ${{ secrets.DOCKER_USERNAME }}/shoppingclient:latest
+
 
