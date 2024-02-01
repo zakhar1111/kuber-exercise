@@ -20,7 +20,7 @@ jobs:
           dotnet-version: ${{ matrix.dotnet-version }}
           
       - name: Restore
-        run: dotnet restore ./*.sln
+        run: dotnet restore ./Shopping.sln
 
       - name: Build
-        run: dotnet build ./*.sln --configuration Release --no-restore
+        run: dotnet build ./Shopping.sln --configuration Release --no-restore
