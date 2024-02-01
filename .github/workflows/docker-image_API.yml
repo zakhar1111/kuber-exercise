@@ -1,4 +1,4 @@
-name: Docker Image CI API
+name: Build Docker Image
 
 on:
   workflow_dispatch:
