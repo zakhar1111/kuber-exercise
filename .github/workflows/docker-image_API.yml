@@ -11,5 +11,5 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Build the Docker image
+    - name: Build Shopping.API 
       run: docker build . --file Shopping.API/Dockerfile --tag my-image-name:$(date +%s)
