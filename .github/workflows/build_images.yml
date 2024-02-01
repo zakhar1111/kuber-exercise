@@ -1,4 +1,4 @@
-name: Build Docker Image
+name: Build Docker Images
 
 on:
   workflow_dispatch:
@@ -13,3 +13,5 @@ jobs:
     - uses: actions/checkout@v3
     - name: Build Shopping.API 
       run: docker build . --file Shopping.API/Dockerfile --tag my-image-name:$(date +%s)
+    - name: Build Shopping.Client 
+      run: docker build . --file Shopping.Client/Dockerfile --tag my-image-name:$(date +%s)
