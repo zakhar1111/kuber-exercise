@@ -27,6 +27,6 @@ jobs:
         file: ./Shopping.API/Dockerfile
         platforms: linux/amd64
         push: true
-        tags: ${{ secrets.DOCKER_USERNAME }}/shoppingapi:$(date +%s)
+        tags: ${{ secrets.DOCKER_USERNAME }}/shoppingapi:latest
 
 
